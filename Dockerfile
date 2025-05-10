@@ -1,8 +1,8 @@
 # Etapa 1: Build con Maven
 FROM maven:3.9-eclipse-temurin-17 AS build
 WORKDIR /app
-COPY backend/pom.xml .
-COPY backend/src ./src
+COPY pom.xml .
+COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Etapa 2: contenedor final para ejecución

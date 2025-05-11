@@ -24,6 +24,7 @@ public class Application {
 	    public void addCorsMappings(CorsRegistry registry) {
 	      registry.addMapping("/api/**")
 	              .allowedOrigins("http://localhost:4200")
+				  .allowedOrigins("https://jobseniorf.up.railway.app") 
 	              .allowedMethods("GET","POST","PUT","DELETE","OPTIONS")
 	              .allowCredentials(true);
 	    }
